@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#/usr/bin/env bash
 
 # Path to the bash it configuration
 export BASH_IT="$HOME/.bash_it"

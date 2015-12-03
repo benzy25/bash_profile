@@ -1,7 +1,0 @@
-echo "Hello Robert"
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
-alias ls='ls -GFh'
-alias r='rm -rf'
-alias p='pwd'
-alias l='ls -a'
