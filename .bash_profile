@@ -30,18 +30,23 @@ export SCM_CHECK=true
 source $BASH_IT/bash_it.sh
 
 
-echo "Wassup"
+echo "SUP DAWG"
 alias ls='ls -GFh'
 alias sbash='source ~/.bash_profile'
 alias r='rm -rf'
 alias p='pwd'
+alias trash='r ~/.Trash/*'
 alias l='ls -a'
 alias tuck='cat ~/Desktop/*.txt >> urllist.txt
 rm ~/Desktop/*.txt'
 alias wc='wc -l'
-alias wack='mv ~/files/.nonya ~/files/nonya'
-alias boom='mv ~/files/nonya ~/files/.nonya'
+alias work='open ~/Desktop/.working.txt'
 alias hike='cat output.txt | pbcopy'
 alias dups='awk '!seen[$0]++' output.txt'
 alias k='head -1 cutpaste.txt | pbcopy
 echo "$(tail -n +2 cutpaste.txt)" > cutpaste.txt'
+alias gdiff='git difftool'
+alias deskcss='cp ~/parts_online_git/wp-content/themes/x-child-integrity-light/style.css ~/Desktop/style.css'
+alias gftp='git ftp push'
+alias gtool='git difftool'
+alias gbit='git push bit'
