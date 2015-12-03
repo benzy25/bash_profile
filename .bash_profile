@@ -32,9 +32,12 @@ source $BASH_IT/bash_it.sh
 
 echo "Wassup"
 alias ls='ls -GFh'
+alias sbash='source ~/.bash_profile'
 alias r='rm -rf'
 alias p='pwd'
 alias l='ls -a'
+alias tuck='cat ~/Desktop/*.txt >> urllist.txt
+rm ~/Desktop/*.txt'
 alias wc='wc -l'
 alias wack='mv ~/files/.nonya ~/files/nonya'
 alias boom='mv ~/files/nonya ~/files/.nonya'
