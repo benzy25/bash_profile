@@ -50,5 +50,5 @@ alias deskcss='cp ~/parts_online_git/wp-content/themes/x-child-integrity-light/s
 alias gftp='git ftp push'
 alias gtool='git difftool'
 alias gbit='git push bit'
-alias pushall='sh ~/files/scripts/bash/repush.sh'
-alias pullall='sh ~/files/scripts/bash/repull.sh'
+alias gitme='sh ~/files/scripts/bash/gitme.sh'
+alias backbash='cat ~/.bash_profile > ~/files/bash_profile/bash_profile'
