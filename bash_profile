@@ -50,3 +50,5 @@ alias deskcss='cp ~/parts_online_git/wp-content/themes/x-child-integrity-light/s
 alias gftp='git ftp push'
 alias gtool='git difftool'
 alias gbit='git push bit'
+alias pushall='sh ~/files/scripts/bash/repush.sh'
+alias pullall='sh ~/files/scripts/bash/repull.sh'
