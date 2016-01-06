@@ -40,7 +40,7 @@ alias l='ls -a'
 alias tuck='cat ~/Desktop/*.txt >> urllist.txt
 rm ~/Desktop/*.txt'
 alias wc='wc -l'
-alias work='open ~/Desktop/.working.txt'
+alias work='open ~/Desktop/.working.php'
 alias hike='cat output.txt | pbcopy'
 alias dups='awk '!seen[$0]++' output.txt'
 alias k='head -1 cutpaste.txt | pbcopy
@@ -54,3 +54,4 @@ alias gitme='sh ~/files/scripts/bash/gitme.sh'
 alias backbash='cat ~/.bash_profile > ~/files/bash_profile/bash_profile'
 alias commit='sh ~/files/scripts/bash/commit.sh'
 alias blast='sh ~/files/scripts/bash/emailscript.sh'
+alias transpose='perl ~/files/scripts/perl/transpose.pl'
