@@ -40,7 +40,7 @@ alias l='ls -a'
 alias tuck='cat ~/Desktop/*.txt >> urllist.txt
 rm ~/Desktop/*.txt'
 alias wc='wc -l'
-alias work='open ~/Desktop/.working.php'
+alias work='open ~/files/scripts/data/working.php'
 alias hike='cat output.txt | pbcopy'
 alias dups='awk '!seen[$0]++' output.txt'
 alias k='head -1 cutpaste.txt | pbcopy
