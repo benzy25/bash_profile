@@ -29,7 +29,6 @@ export SCM_CHECK=true
 # Load Bash It
 source $BASH_IT/bash_it.sh
 
-
 echo "SUP DAWG"
 alias ls='ls -GFh'
 alias sbash='source ~/.bash_profile'
@@ -40,7 +39,7 @@ alias l='ls -a'
 alias tuck='cat ~/Desktop/*.txt >> urllist.txt
 rm ~/Desktop/*.txt'
 alias wc='wc -l'
-alias work='open ~/files/scripts/data/working.php'
+alias work='open ~/Desktop/.working.txt'
 alias hike='cat output.txt | pbcopy'
 alias dups='awk '!seen[$0]++' output.txt'
 alias k='head -1 cutpaste.txt | pbcopy
@@ -53,5 +52,18 @@ alias gbit='git push bit'
 alias gitme='sh ~/files/scripts/bash/gitme.sh'
 alias backbash='cat ~/.bash_profile > ~/files/bash_profile/bash_profile'
 alias commit='sh ~/files/scripts/bash/commit.sh'
-alias blast='sh ~/files/scripts/bash/emailscript.sh'
-alias transpose='perl ~/files/scripts/perl/transpose.pl'
+alias wpupdate='sh ~/files/scripts/bash/wpUpdate.sh'
+PHP_VERSION=`ls /Applications/MAMP/bin/php/ | sort -n | tail -1`
+export PATH=/Applications/MAMP/bin/php/${PHP_VERSION}/bin:$PATH
+# Export MAMP MySQL executables as functions
+# Makes them usable from within shell scripts (unlike an alias)
+mysql() {
+    /Applications/MAMP/Library/bin/mysql "$@"
+}
+mysqladmin() {
+    /Applications/MAMP/Library/bin/mysqladmin "$@"
+}
+export -f mysql
+export -f mysqladmin
+
+source /Users/Benz/files/scripts/bash/wp-completion.bash
