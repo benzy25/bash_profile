@@ -54,8 +54,7 @@ alias gfig='vi .git/config'
 alias gitme='sh ~/files/scripts/bash/gitme.sh'
 alias backbash='cat ~/.bash_profile > ~/files/bash_profile/bash_profile'
 alias commit='sh ~/files/scripts/bash/commit.sh'
-alias wpcommit='sh ~/files/scripts/bash/wpcommit.sh'
-alias flowpull='sh ~/files/scripts/bash/flow_pull.sh'
+alias flow='sh ~/files/scripts/bash/flow.sh'
 alias wpupdate='sh ~/files/scripts/bash/wpUpdate.sh'
 PHP_VERSION=`ls /Applications/MAMP/bin/php/ | sort -n | tail -1`
 export PATH=/Applications/MAMP/bin/php/${PHP_VERSION}/bin:$PATH
@@ -71,3 +70,4 @@ export -f mysql
 export -f mysqladmin
 
 source /Users/Benz/files/scripts/bash/wp-completion.bash
+
