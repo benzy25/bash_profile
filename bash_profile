@@ -55,10 +55,9 @@ alias flow='sh ~/files/scripts/bash/flow.sh'
 alias plugin='sh ~/files/scripts/bash/plugin.sh'
 alias wpupdate='sh ~/files/scripts/bash/wpUpdate.sh'
 alias blast='sh ~/files/scripts/bash/emailscript.sh'
+alias sql='sh ~/files/scripts/bash/runsql.sh'
 alias mampsql='tail -7 ~/files/sql/working.sql | pbcopy'
 alias gitadddx='sh ~/files/scripts/bash/git-delete.sh'
-alias vi='mvim'
-alias vim='mvim'
 PHP_VERSION=`ls /Applications/MAMP/bin/php/ | sort -n | tail -1`
 export PATH=/Applications/MAMP/bin/php/${PHP_VERSION}/bin:$PATH
 # Export MAMP MySQL executables as functions
@@ -74,3 +73,4 @@ export -f mysqladmin
 
 source /Users/jeffreyambrose/files/scripts/bash/wp-completion.bash
 export PATH="/usr/local/sbin:$PATH"
+export PATH=$PATH:/Users/jeffreyambrose/bin/
