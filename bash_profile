@@ -56,6 +56,7 @@ alias wpsql='sh ~/files/scripts/bash/runsql.sh'
 alias zilla='sh ~/files/scripts/bash/filezilla.sh'
 alias users='sh ~/files/scripts/bash/wp_users.sh'
 alias lt='ls -Alhtr'
+alias vibash='vi ~/.bash_profile'
 alias gitadddx='sh ~/files/scripts/bash/git-delete.sh'
 PHP_VERSION=`ls /Applications/MAMP/bin/php/ | sort -n | tail -1`
 export PATH=/Applications/MAMP/bin/php/${PHP_VERSION}/bin:$PATH
@@ -70,6 +71,6 @@ mysqladmin() {
 export -f mysql
 export -f mysqladmin
 
-source /Users/jeffreyambrose/files/scripts/bash/wp-completion.bash
+source /Users/benz/files/scripts/bash/wp-completion.bash
 export PATH="/usr/local/sbin:$PATH"
-export PATH=$PATH:/Users/jeffreyambrose/bin
+export PATH=$PATH:/Users/benz/bin
