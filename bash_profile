@@ -28,6 +28,7 @@ export SCM_CHECK=true
 source $BASH_IT/bash_it.sh
 
 echo "SUP DAWG"
+brew update
 alias ls='ls -GFh'
 alias sbash='source ~/.bash_profile'
 alias r='rm -rf'
