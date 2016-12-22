@@ -60,6 +60,8 @@ alias users='sh ~/files/scripts/bash/wp_users.sh'
 alias lt='ls -Alhtr'
 alias vibash='vi ~/.bash_profile'
 alias gitadddx='sh ~/files/scripts/bash/git-delete.sh'
+alias mm='cd /Applications/MAMP/htdocs/medmattress'
+alias dia='cd /Applications/MAMP/htdocs/parts_online'
 
 PHP_VERSION=`ls /Applications/MAMP/bin/php/ | sort -n | tail -1`
 export PATH=/Applications/MAMP/bin/php/${PHP_VERSION}/bin:$PATH
