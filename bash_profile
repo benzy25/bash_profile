@@ -53,16 +53,18 @@ alias commit='sh ~/files/scripts/bash/commit.sh'
 alias flow='sh ~/files/scripts/bash/flow.sh'
 alias plugin='sh ~/files/scripts/bash/plugin.sh'
 alias blast='sh ~/files/scripts/bash/emailscript.sh'
-alias img='identify -format "%f: %w x %h\n" *.jpg *.gif *.png'
+alias img='identify -format "%f: %w x %h\n" *.jpg *.gif *.png *.JPG *.PNG *.jpeg 2> /dev/null'
 alias wpsql='sh ~/files/scripts/bash/runsql.sh'
 alias zilla='sh ~/files/scripts/bash/filezilla.sh'
 alias users='sh ~/files/scripts/bash/wp_users.sh'
 alias report='sh ~/files/scripts/bash/report.sh'
+alias suckit="awk 'NR==FNR{a[$0]=1;next}!a[$0]\'"
 alias lt='ls -Alhtr'
 alias vibash='vi ~/.bash_profile'
 alias gitadddx='sh ~/files/scripts/bash/git-delete.sh'
 alias mm='cd /Applications/MAMP/htdocs/medmattress'
 alias dia='cd /Applications/MAMP/htdocs/parts_online'
+alias desk='cd ~/Desktop'
 
 PHP_VERSION=`ls /Applications/MAMP/bin/php/ | sort -n | tail -1`
 export PATH=/Applications/MAMP/bin/php/${PHP_VERSION}/bin:$PATH
