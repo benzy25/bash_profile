@@ -28,7 +28,6 @@ export SCM_CHECK=true
 source $BASH_IT/bash_it.sh
 
 echo "SUP DAWG"
-ssh-add -A &> /dev/null
 #brew update
 alias ls='ls -GFh'
 alias sbash='source ~/.bash_profile'
@@ -52,33 +51,30 @@ alias backbash='cat ~/.bash_profile > ~/files/bash_profile/bash_profile'
 alias commit='sh ~/files/scripts/bash/commit.sh'
 alias flow='sh ~/files/scripts/bash/flow.sh'
 alias plugin='sh ~/files/scripts/bash/plugin.sh'
+alias wpupdate='sh ~/files/scripts/bash/wpUpdate.sh'
 alias blast='sh ~/files/scripts/bash/emailscript.sh'
-alias img='identify -format "%f: %w x %h\n" *.jpg *.gif *.png *.JPG *.PNG *.jpeg 2> /dev/null'
 alias wpsql='sh ~/files/scripts/bash/runsql.sh'
 alias zilla='sh ~/files/scripts/bash/filezilla.sh'
 alias users='sh ~/files/scripts/bash/wp_users.sh'
-alias report='sh ~/files/scripts/bash/report.sh'
-alias suckit="awk 'NR==FNR{a[$0]=1;next}!a[$0]\'"
 alias lt='ls -Alhtr'
 alias vibash='vi ~/.bash_profile'
 alias gitadddx='sh ~/files/scripts/bash/git-delete.sh'
-alias mm='cd /Applications/MAMP/htdocs/medmattress'
-alias dia='cd /Applications/MAMP/htdocs/parts_online'
-alias desk='cd ~/Desktop'
+alias teamsql='/applications/MAMP/library/bin/mysql -u root -p wordpress_db < /Users/Benz/mamp/team_rental/teamrental.sql' 
+
 
 PHP_VERSION=`ls /Applications/MAMP/bin/php/ | sort -n | tail -1`
 export PATH=/Applications/MAMP/bin/php/${PHP_VERSION}/bin:$PATH
 # Export MAMP MySQL executables as functions
 # Makes them usable from within shell scripts (unlike an alias)
 mysql() {
-        /Applications/MAMP/Library/bin/mysql "$@"
-    }
-    mysqladmin() {
-            /Applications/MAMP/Library/bin/mysqladmin "$@"
-        }
-        export -f mysql
-        export -f mysqladmin
+    /Applications/MAMP/Library/bin/mysql "$@"
+}
+mysqladmin() {
+    /Applications/MAMP/Library/bin/mysqladmin "$@"
+}
+export -f mysql
+export -f mysqladmin
 
-        source /Users/jeffreyambrose/files/scripts/bash/wp-completion.bash
-        export PATH="/usr/local/sbin:$PATH"
-        export PATH=$PATH:/Users/jeffreyambrose/bin
+source /Users/benz/files/scripts/bash/wp-completion.bash
+export PATH="/usr/local/sbin:$PATH"
+export PATH=$PATH:/Users/benz/bin
