@@ -66,6 +66,7 @@ alias mm='cd /Applications/MAMP/htdocs/medmattress'
 alias dia='cd /Applications/MAMP/htdocs/parts_online'
 alias desk='cd ~/Desktop'
 alias slack='open /Applications/Slack.app'
+alias img800='sh ~/files/scripts/bash/resize_img.sh'
 
 PHP_VERSION=`ls /Applications/MAMP/bin/php/ | sort -n | tail -1`
 export PATH=/Applications/MAMP/bin/php/${PHP_VERSION}/bin:$PATH
