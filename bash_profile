@@ -81,6 +81,6 @@ mysql() {
         export -f mysql
         export -f mysqladmin
 
-        source /Users/jeffreyambrose/files/scripts/bash/wp-completion.bash
+        source /Users/dmuser/files/scripts/bash/wp-completion.bash
         export PATH="/usr/local/sbin:$PATH"
         export PATH=$PATH:/Users/jeffreyambrose/bin
